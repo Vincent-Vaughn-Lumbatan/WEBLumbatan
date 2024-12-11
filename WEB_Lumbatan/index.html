@@ -1,103 +1,249 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Fredoka:wght@300..700&family=Inder&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6b0cee075c.js" crossorigin="anonymous"></script>
-    <title>Personal Profile</title>
-    <link rel="stylesheet" href="Style/bg.css">
-    <link rel="stylesheet" href="Style/design.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo"><a href="#">PERSONAL PROFILE</a></div>
-            <ul>
-                <li><a href="#About">About Me <i class="fa-solid fa-arrow-right fa-.25x"></i> </a></li>
-                <li><a href="#Works">My Works <i class="fa-solid fa-arrow-right fa-.25x"></i> </a></li>
-                <li><a href="#Feedback">Feedback <i class="fa-solid fa-arrow-right fa-.25x"></i> </a></li>
-                <li><a href="#Contact">Contact Me <i class="fa-solid fa-arrow-right fa-.25x"></i> </a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="bglap"></div>
-        <div class="Inside">
-            <section class="Profile">
-                <img class="Pfp" src="Images/ME.png" alt="Profile Picture" />
-                <div class="NR">
-                    <h1 class="Name">Vincent Vaughn E. Lumbatan</h1>
-                    <h2 class="Role">Digital Artist . Animator</h2>
-                </div>
-            </section>
-        </div>
-        <div class="Inside2">
-            <div id="About">
-            <h3>About Me</h3>
-            <div class="AM">
-                <p class="AM1">
-                    An enthusiastic and aspiring Digital Artist and Animator, a 2nd year art student at the University of Northwestern Mindanao major in BS Animation and Multimedia Arts.
-                </p>
-                <p class="AM1">
-                    I am currently one of the Digital Artist and Cartoonist in The Insights Publication, creating artworks for the school under the publication. As a digital artist, I seek to produce quality artworks that conveys emotion and deep messages to my audience, and I would like to extend my expertise to everyone who wants my help. I am willing to take any project to the extent of my capabilities, and submit it in a punctual manner.
-                </p>
-                <p class="AM1">
-                    I aspire to create more artworks and become an animator in the near future!
-                </p>
-            </div>
-                <div id="Works">
-                    <h3>My Works</h3>
-                    <div class="M">
-                        <div class="MW1">
-                            <div class="MyWorks">
-                                <img class="wrk1" src="Images/Mday.png" alt="A Mother's Everlasting Embrace" />
-                                <img class="wrk1" src="Images/Tday.png" alt="GY GM Front" />
-                                <video class="wrk1" controls>
-                                    <source src="Images/Throw.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                        <div class="MW1">
-                            <div class="MyWorks">
-                                <img class="wrk2" src="Images/GY, GM FRONT(Approved).png" alt="GY GM Front" />
-                                <img class="wrk2" src="Images/GY, GM BACK(Approved).jpg" alt="GY GM Back" />
-                                <img class="wrk2" src="Images/Bawal BASTOS!.jpg" alt="GY GM Front" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<footer class="footer">
-    </section>
-    <div class="container">
-            <ul>
-                <div id="Feedback">
-                    <h class="F">Feedback:</h>
-                <form action="connect.php" method="post">
-                        <div class="id">
-                            <input placeholder="Username" type="text" name="username">
-                        </div>
-                        <div class="id">
-                            <textarea placeholder="Your feedback..." id="comments" name="feedback" rows="5" ></textarea>
-                        </div>
-                        <div class="id">
-                            <button type="submit">Submit Feedback</button>
-                        </div>
-                </form>
-            </ul>
-            <ul>
-                <div id="Contact">
-                    <h class="F">Contact Me:</h>
-                <p class="fb"> <a class="fbtxt" href="https://www.facebook.com/profile.php?id=100014733163407"> <i class="fa-brands fa-facebook fa-2x"></i></a> On my Facebook!</p>
-                <p class="insta"> <a class="gram" href="https://www.instagram.com/vincentvanlumbatan/?next=%2F"> <i class="fa-brands fa-square-instagram fa-2x"></i></a> On my Instagram!</p>
-                <p class="mail"> <a class="mltxt" href="mailto:vincentvaughn.lumbatan@nmsc.edu.ph"> <i class="fa-solid fa-envelope fa-2x"></i></a> On my Gmail!</p>
-            </ul>
-        </div>
-        <p class="bot">Copyright © 2024. All rights reserved.</p>
-</footer>
-</body>
-</html>
-</html>
+*{
+    color: white;
+    text-decoration: none;
+}
+.navbar{ 
+    border-style: ridge;
+    border-color: rgba(251, 255, 0, .5);
+    border-width: thin;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    z-index: 1;
+}
+.logo a{
+    font-size: 30px;
+    font-family: "Francois One", sans-serif;
+    font-style: normal;
+}
+li{
+    list-style: none; 
+    display: inline-block;
+    justify-content: right;
+}
+li a:hover{
+    background-color:  rgb(11, 0, 40);
+    font-size: 20px;
+}
+li a{
+    color: white;
+    font-size: 18px;
+    padding: 18px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none; 
+}
+.fa-solid.fa-arrow-right{
+    rotate: 135deg;
+    opacity: .5;
+}
+
+.Inside{
+    padding: 65px;
+}
+.Profile{
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.Pfp{
+    width: 400px;
+    height: 400px;
+    border: ridge;
+    border-radius: 75px;
+    border-width: thick;
+    background: rgba(196, 196, 196, .9);
+    border: 2px solid rgba(251, 255, 0, 1);
+}
+.NR{
+    color: rgb(226, 233, 240);
+}
+.Name{
+    padding-left: 30px;
+    font-family: "Francois One", sans-serif;
+    font-size: 40px;
+    letter-spacing: 15px;
+    border-style: ridge;
+    border-color: rgba(251, 255, 0, .5);
+    border-width: medium;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.Role{
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.Inside2{
+    padding-left: 100px;
+    padding-right: 150px;
+    color: rgb(226, 233, 240);
+    margin: auto;
+
+}
+h3{
+    font-family: "Francois One", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 30px;
+    border-style: ridge;
+    border-color: rgba(251, 255, 0, .5);
+    border-width: medium;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.M{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.AM{
+    padding: 40px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-indent: 100px;
+    line-height: 40px;
+    border-style: ridge;
+    border-color: rgba(251, 255, 0, .5);
+    border-width: medium;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.AM1{
+    padding: 10px;
+}
+#Works{
+    font-style: normal;
+}
+.MW1{
+    padding: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 40px;
+    align-items: center;
+}
+.wrk1{
+    width: 350px;
+    height: 350px;
+    border: ridge;
+    border-radius: 10px;
+    border-width: thick;
+    background: rgba(196, 196, 196, .9);
+    border: 2px solid rgba(251, 255, 0, .5);
+}
+.wrk2{
+    width: 310px;
+    height: 400px;
+    border-radius: 10px;
+    border: ridge;
+    border-width: thick;
+    background: rgba(196, 196, 196, .9);
+    border: 2px solid rgba(251, 255, 0, .5);
+}
+.FnC{
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 40px;
+}
+#Contact{
+    font-style: normal;
+    padding: 30px;
+}
+.footer{
+    padding-bottom: 10px;
+    border-style: ridge;
+    border-color: rgba(251, 255, 0, .5);
+    border-right: rgb(11, 0, 40);
+    border-left: rgb(11, 0, 40);
+    border-style: ridge;
+}
+#Feedback{
+    font-size: 40px;
+    font-family: "Francois One", sans-serif;
+    margin-top: 35px;
+    margin-bottom: 75px;
+}
+#Contact{
+    font-size: 40px;
+    font-family: "Francois One", sans-serif;
+    margin-bottom: 30px;
+}
+.id{
+    margin-top: 0%;
+}
+.container {
+    background-color: rgb(11, 0, 40);
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 300px;
+}
+.fb{
+    padding: 20px;
+    display:  flex; 
+    align-content: center;   
+    font-family: "Fredoka", sans-serif;
+    word-spacing: 3px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.fbtxt{
+    margin-right: 20px;
+}
+.insta{
+    padding: 20px;
+    display:  flex; 
+    align-content: center;   
+    font-family: "Fredoka", sans-serif;
+    word-spacing: 3px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.gram{
+    margin-right: 20px;
+}
+.mail{
+    padding: 20px;
+    display:  flex; 
+    align-content: center;
+    font-family: "Fredoka", sans-serif;
+    word-spacing: 3px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 30px;  
+}
+.mltxt{
+    margin-right: 20px;
+}
+input, textarea, button {
+    width: 600px;
+    padding: 12px;
+    background: rgb(5, 0, 16);
+    border-color: rgba(251, 255, 0, .25);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+.bot{
+    font-family: "Francois One", sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+}
